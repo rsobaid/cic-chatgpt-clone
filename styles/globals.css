@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::selection {
+	@apply text-white bg-green;
+}
+*::-webkit-scrollbar {
+	@apply hidden;
+}
+
+@layer components {
+	.infoText {
+		@apply p-4 bg-gray-700/50 rounded-lg max-w-[300px] hover:border hover:border-slate-500 cursor-pointer text-xs lg:text-lg;
+	}
+	.chatRow {
+		@apply flex items-center justify-center px-5 py-3 space-x-2 text-sm text-gray-300 transition-all duration-700 ease-out rounded-lg cursor-pointer hover:bg-gray-700/70;
+	}
+}
